@@ -1,4 +1,6 @@
-''' stringReformatting
+def string_reformatting(s, k):
+
+''' string_reformatting
 The string s contains dashes that split it into groups of characters. You are given an integer k that represents the number of characters in groups that your output should have. Your goal is to return a new string that breaks s into groups with a length of k by placing dashes at the correct intervals. If necessary, the first group of characters can be shorter than k. It is guaranteed that there are no consecutive dashes in s.
 
 Example
@@ -14,7 +16,6 @@ stringReformatting(s, k) = "24-a0r-74k".
 Given the same input string and k = 3, split the string into groups of 2, 3, and 3 characters to get the output string of "24-a0r-74k"
 '''
 
-def stringReformatting(s, k):
     str = s.replace('-','')
     m = len(str)%k
     
